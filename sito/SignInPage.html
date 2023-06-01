@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>New account for Sport&Nutrition</title>
+
+  <link href="\sitoCSS\style_SignInPage.css" rel="stylesheet" type="text/css"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" type="image/ico" href="/icons/Sport&Nutrition.ico"/> 
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center">
+        <img src="/images/Sport&Nutrition.png" height="40%" width="200px" >
+    </div>
+    
+    <div class="container"  style="gap: 2px;">
+    <div id="login-box" >
+       <div id="createAc">Crea il tuo account:</div>
+       <!--se la pagina NON deve essere ricaricata ==> return signIn();*/-->
+    
+
+        <form onsubmit="return signIn()">
+      
+                
+                <div class="inputs">
+              
+                    <div class="webflow-style-input">
+                      <input class="" type="text" placeholder="Nome" name="NomeUtente" id="name"></input></div>
+                 
+        
+          
+                <div class="webflow-style-input">
+                <input type="text" name="CognomeUtente" id="surname" placeholder="Cognome"></div>
+                
+       
+            
+            <div>
+   
+                <div class="webflow-style-input">
+                <input type="email" name="" id="e-mail" style="width:100%;" placeholder="E-mail"></div>
+            </div>
+            <div class="webflow-style-input">
+
+                <input  id="password" type="password" required placeholder="password"/>
+             <!-- <span class="input__icon-wrapper">
+                    <i class="input__icon ri-eye-off-line"></i>
+                </span>-->
+                
+            </div>
+            
+
+            </div>
+    
+            <div class="terms">
+            <input type="checkbox" name="" id="term" required />Io accetto<a href="">Termini d'uso</a>
+            </div> 
+            
+            <button class="button-78" role="button" id="myButton" type="submit" onsubmit="return signIn()" style="margin-top:20px;">REGISTRATI</button>
+        
+        </form>
+    </div>
+     <div id="fraseMot" class="container2">Hai già un account?<a href="\sito\loginPage.html">Accedi</a><div>Improve yourself</div></a></div>
+ </div>
+
+<footer>
+    Sport & Nutrition 2023<br>© all rights reserved.
+</footer>
+   
+</body>
+
+ <script src="/js_file/js_SignInPage.js"></script>
+ 
+
+
+
+</html>
